@@ -6,22 +6,24 @@ public class Ejercicio3 {
 
 	public static void main(String[] args) {
 		
-		int kcomida;
+		double kcomida;
 		int numanim;
-		int kcome;
+		double kcome;
 		
 		Scanner sc = new Scanner(System.in);
 		
-		kcomida = sc.nextInt();
+		kcomida = sc.nextDouble();
 		numanim = sc.nextInt();
-		kcome = sc.nextInt();
-		
-		if (kcomida/(kcome * numanim) >= 1) {
+		kcome = sc.nextDouble();
+		if (numanim >= 1) {
+		if (kcomida>kcome) {
 			System.out.println("comen");
 		} else {
-			System.out.println("no comen");
+			System.out.println("Cada animal podra comer " + (kcomida/numanim) + "kilos");
 		}
-
+		} else {
+			System.out.println("Si no hay animales no hay nada que alimentar");
+		}
 	}
 
 }

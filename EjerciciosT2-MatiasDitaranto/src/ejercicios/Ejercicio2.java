@@ -20,51 +20,78 @@ public class Ejercicio2 {
 			letra = "T";
 		}
 		case 1 -> {
-			letra = "T";
+			letra = "R";
 		}
 		case 2 -> {
-			letra = "T";
+			letra = "W";
 		}
 		case 3 -> {
-			letra = "T";
+			letra = "A";
 		}
 		case 4 -> {
-			letra = "T";
+			letra = "G";
 		}
 		case 5 -> {
-			letra = "T";
+			letra = "M";
 		}
 		case 6 -> {
-			letra = "T";
+			letra = "Y";
 		}
 		case 7 -> {
-			letra = "T";
+			letra = "F";
 		}
 		case 8 -> {
-			letra = "T";
+			letra = "P";
 		}
 		case 9 -> {
-			letra = "T";
+			letra = "D";
 		}
 		case 10 -> {
-			letra = "T";
+			letra = "X";
 		}
 		case 11 -> {
-			letra = "T";
+			letra = "B";
 		}
 		case 12 -> {
-			letra = "T";
+			letra = "N";
 		}
 		case 13 -> {
 			letra = "J";
 		}
+		case 14 -> {
+			letra = "Z";
+		}
+		case 15 -> {
+			letra = "S";
+		}
+		case 16 -> {
+			letra = "Q";
+		}
+		case 17 -> {
+			letra = "V";
+		}
+		case 18 -> {
+			letra = "H";
+		}
+		case 19 -> {
+			letra = "L";
+		}
+		case 20 -> {
+			letra = "C";
+		}
+		case 21 -> {
+			letra = "K";
+		}
+		case 22 -> {
+			letra = "E";
+		}
 		default -> {
-			letra = "no";
+			letra = "Error de calculo";
 		}
 		
 
 		}
-		System.out.println(letra);
+		System.out.println("La letra de su DNI es: " + letra);
 
 	}
 

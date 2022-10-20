@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class Ejercicio7 {
 
 	public static void main(String[] args) {
-		
+
 		int horas;
 		int minutos;
 		int seg;
@@ -15,17 +15,33 @@ public class Ejercicio7 {
 		minutos = sc.nextInt();
 		seg = sc.nextInt();
 		seg += 1;
-		
-		seg += horas * 3600;
-		seg += minutos * 60;
 
-		horas = (seg/3600); //Dividimos los segundos por 3600 (1 hora = 3600 segundos)
-		minutos = (seg%3600)/60; //A los segundos restantes los dividimos entre 60 (1 min = 60 segundos)
-		seg = (seg%60)%60; //Los segundos restantes de los miniutos son los que sobran
+		if (horas <= 24) {
+			if (minutos <= 60) {
+				if (seg <= 60) {
+
+					if (seg >= 60) {
+						seg = 0;
+						minutos += 1;
+					}
+
+					if (minutos > 60)
+						if (minutos >= 60) {
+							minutos = 0;
+							horas += 1;
+						}
+					if (horas == 24) {
+						horas = 0;
+					}
+					// Se le ofrece al usuario los resultados en horas, minutos y segundos
+					System.out.println("son las: " + horas + ":" + minutos + ":" + seg);
+				}
+			}
+		} else {
+			System.out.println("La hora introduccida es incorrecta");
+		}
 		
-		//Se le ofrece al usuario los resultados en horas, minutos y segundos
-		System.out.printf("son las: " + horas%2f + ":" + minutos%2f + ":" + seg%2f);
-		sc.close(); //Se cierra el objeto Scanner
+		sc.close(); // Se cierra el objeto Scanner
 
 	}
 

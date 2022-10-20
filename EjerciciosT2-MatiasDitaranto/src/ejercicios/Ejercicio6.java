@@ -12,9 +12,9 @@ public class Ejercicio6 {
 		
 		Scanner sc = new Scanner(System.in);
 		
-		num1 = Math.random() * 99 + 1;
+		num1 = Math.random() * 99 ;
 		System.out.println((int)num1);
-		num2 = Math.random() * 99 + 1;
+		num2 = Math.random() * 99 ;
 		System.out.println((int)num2);
 		
 		numusuario = sc.nextInt();
