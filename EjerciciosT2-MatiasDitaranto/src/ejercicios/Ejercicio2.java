@@ -1,20 +1,28 @@
 package ejercicios;
 
-import java.util.Scanner;
+import java.util.Scanner; //Importamos el objeto Scanner
 
 public class Ejercicio2 {
 
 	public static void main(String[] args) {
-		
+		//Creamos las variables para guardar la letra del DNI
 		String letra;
+		 //Creamos la variable donde guardaremos los datos introduccidos
 		int DNI;
+		 //Creamos la variable donde guardamos el valor de la operacion necesaria
 		int aux;
 		
-		Scanner sc = new Scanner(System.in);
+		Scanner sc = new Scanner(System.in); //Creamos el objeto Scanner
 		
-		DNI = sc.nextInt();
+		 //Se le pide al usuario que introduzca un DNI
+		System.out.println("Introduzca su DNI (SIN) letra");
+		DNI = sc.nextInt(); //El valor es guardado en la variable
+		
+		//Se hace la operacion para saber la letra del DNI 
 		aux = DNI % 23;
 		
+		//Con un switch y dependiendo del valor de la AUX determinamos la letra
+		//Como cada numero equivale a 1 letra, valoramos este mismo.
 		switch (aux) {
 		case 0 -> {
 			letra = "T";
@@ -91,8 +99,7 @@ public class Ejercicio2 {
 		
 
 		}
+		//Ofrece la letra del DNI al usuario
 		System.out.println("La letra de su DNI es: " + letra);
-
 	}
-
 }
