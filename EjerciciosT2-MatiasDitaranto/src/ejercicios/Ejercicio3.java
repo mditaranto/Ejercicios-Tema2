@@ -17,10 +17,10 @@ public class Ejercicio3 {
 		System.out.print("Introduzca cuantos kilos de comida han sido comprados.");
 		kcomida = sc.nextDouble(); //El valor es guardado en la variable
 		//Se le pide al usuario que introduzca los kilos de comida
-		System.out.println("Introduzca el numero de animales en la granja");
+		System.out.print("Introduzca el numero de animales en la granja");
 		numanim = sc.nextInt(); //El valor es guardado en la variable
 		//Se le pide al usuario que introduzca los kilos de comida
-		System.out.println("Introduzca cuantos kilos se consume diariamente.");
+		System.out.print("Introduzca cuantos kilos se consume diariamente.");
 		kcome = sc.nextDouble(); //El valor es guardado en la variable
  
 		//Mediante un condicional se ofrecen los resultados

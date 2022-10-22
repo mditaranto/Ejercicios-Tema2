@@ -101,5 +101,6 @@ public class Ejercicio2 {
 		}
 		//Ofrece la letra del DNI al usuario
 		System.out.println("La letra de su DNI es: " + letra);
+		sc.close(); // Se cierra el objeto Scanner
 	}
 }

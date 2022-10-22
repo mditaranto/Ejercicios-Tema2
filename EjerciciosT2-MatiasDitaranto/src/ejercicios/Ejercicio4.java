@@ -1,61 +1,73 @@
 package ejercicios;
 
-import java.util.Scanner;
+import java.util.Scanner; //Importamos el objeto Scanner
 
 public class Ejercicio4 {
 
 	public static void main(String[] args) {
-
+		// Creamos la variable donde guardaremos los datos introduccidos
 		int num;
-		String numletra;
+		// Creamos la variable donde guardaremos los numeros escritos
+		String unid;
+		String numletra = null;
 
-		Scanner sc = new Scanner(System.in);
+		Scanner sc = new Scanner(System.in); // Creamos el objeto Scanner
 
-		num = sc.nextInt();
+		// Se le pide al usuario que introduzca un numero entre 1 y 99
+		System.out.println("Escriba un numero entre 1 y 99");
+		num = sc.nextInt();// El valor es guardado en la variable
 
-		if (num < 100 && num >= 1);{
-
+		// Mediante una condicional comprobamos que este en el rango definido.
+		if (num >= 100 || num < 1) {
+			System.out.println("El numero no esta comprendido entre 1 y 99");
+			// Cuando se esta en el rango, continua el programa
+		} else {
+			// Con este switch averiguamos las unidades
 			switch (num % 10) {
 			case 1 -> {
-				numletra = "uno";
+				unid = "uno";
 			}
 			case 2 -> {
-				numletra = "dos";
+				unid = "dos";
 			}
 			case 3 -> {
-				numletra = "tres";
+				unid = "tres";
 			}
 			case 4 -> {
-				numletra = "cuatro";
+				unid = "cuatro";
 			}
 			case 5 -> {
-				numletra = "cinco";
+				unid = "cinco";
 			}
 			case 6 -> {
-				numletra = "seis";
+				unid = "seis";
 			}
 			case 7 -> {
-				numletra = "siete";
+				unid = "siete";
 			}
 			case 8 -> {
-				numletra = "ocho";
+				unid = "ocho";
 			}
 			case 9 -> {
-				numletra = "nueve";
+				unid = "nueve";
 			}
 			default -> {
-				numletra = "negativo";
+				unid = "cero";
 			}
 			}
-
-			if (num > 10) {
-
+			if (num < 10) { /*
+							 * Si el numero es menor a 10, se devuelve como valor escrito del numero las
+							 * unidades
+							 */
+				System.out.println("El numero es " + unid);
+			} else { // Si el numero es mayor a 10, el programa continua
+				// Con este switch sacamos las decenas del numero
 				switch (num / 10) {
 				case 1 -> {
-					numletra = "diez";
+					numletra = "dieci";
 				}
 				case 2 -> {
-					numletra = "veinte";
+					numletra = "veinti";
 				}
 				case 3 -> {
 					numletra = "treinta";
@@ -78,54 +90,11 @@ public class Ejercicio4 {
 				case 9 -> {
 					numletra = "noventa";
 				}
-				default -> {
-					numletra = "Es mayor a 99";
 				}
-				}
-
-				if (num % 10 != 0) {
-					switch (num / 10) {
-					case 1 -> {
-						numletra = "dieci";
-					}
-					case 2 -> {
-						numletra = "veinti";
-					}
-					}
-					if (num>30) {
-						numletra += " y ";
-					}
-					switch (num % 10) {
-					case 1 -> {
-						numletra += "uno";
-					}
-					case 2 -> {
-						numletra += "dos";
-					}
-					case 3 -> {
-						numletra += "tres";
-					}
-					case 4 -> {
-						numletra += "cuatro";
-					}
-					case 5 -> {
-						numletra += "cinco";
-					}
-					case 6 -> {
-						numletra += "seis";
-					}
-					case 7 -> {
-						numletra += "siete";
-					}
-					case 8 -> {
-						numletra += "ocho";
-					}
-					case 9 -> {
-						numletra += "nueve";
-					}
-					}
-					
-				if (num < 16) {
+				/*
+				 * con una condicional y un switch ofrecemos como resultado del 11 al 15
+				 */
+				if (10 < num && num <= 15) {
 					switch (num) {
 					case 11 -> {
 						numletra = "once";
@@ -143,12 +112,34 @@ public class Ejercicio4 {
 						numletra = "quince";
 					}
 					}
-
-	
+					System.out.println("El numero es " + numletra);
+				}
+				/*
+				 * una vez descartados los numeros anteriores, para los numeros inferiores a 30
+				 * se muestra el resultado sin "y"
+				 */
+				if (num > 15 && num != 20 && num < 30) {
+					System.out.println("El numero es " + numletra + unid);
+				}
+				// Para el resto se añade el "y"
+				if (num > 30 && num % 10 != 0) {
+					System.out.println("El numero es " + numletra + " y " + unid);
+				}
+				/*
+				 * En caso que el numero sea multiplo de 10, se varia algunos valores en caso
+				 * del 10 y el 20 y se ofrece el resultado
+				 */
+				if (num % 10 == 0) {
+					if (num == 10) {
+						numletra = "diez";
+					}
+					if (num == 20) {
+						numletra = "veinte";
+					}
+					System.out.println("El numero es " + numletra);
 				}
 			}
 		}
-		}
-		System.out.println("El numero es " + numletra);
+		sc.close(); // Cerramos el objeto Scanner
 	}
 }
