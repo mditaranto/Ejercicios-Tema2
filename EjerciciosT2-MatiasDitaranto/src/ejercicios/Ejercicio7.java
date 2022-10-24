@@ -6,13 +6,9 @@ public class Ejercicio7 {
 
 	/*
 	 * Para la verificacion de este programa se han realizado diversas pruebas: Se
-	 * introducen horas con los segundos y minutos, tanto a la vez como de forma
-	 * intermitente en 59 (Debe de establecerse en 0) Se introducen horas donde la
-	 * hora iguale el valor 24 [23 horas y 60 minutos o 24 horas] (Debe de
-	 * establecerse en 0) Se introducen valores fuera de lugar [minutos y segundos
-	 * mayores a 60 o las horas mayor a 24] (Debe de indicar que es una hora
-	 * incorrecta) Se introduce una hora normal Todos los valores correctos deben de
-	 * estar con 1 segundo extra.
+	 * horas = 23, minutos = 59, seg = 59 --> Pasados un segundo son las: 0:0:0
+	 * horas = 22, minutos = 44, seg = 23 --> Pasados un segundo son las: 22:44:24
+	 * horas = 25, minutos = 560, seg = 71 --> La hora introducida es incorrecta.
 	 */
 
 	public static void main(String[] args) {
