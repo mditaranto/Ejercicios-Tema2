@@ -6,11 +6,9 @@ public class Ejercicio3 {
 	
 	/*
 	 * Para la verificacion de este programa se han realizado diversas pruebas:
-	 * Para la comprobacion que no haya problemas con el numero 0 se introduce
-	 * en el valor de los animales. El programa debe indicar que no hay animales.
-	 * Para la primera solucion se introduce mas comida comprada que consumida
-	 * Para la otra alternativa, mas comida consumida que comprada.
-	 * Debe dar el resultado deseado en cualquier caso.
+	 * kcomida = 50, numanim = 2, kcome = 20 --> Los animales comen correctamente
+	 * kcomida = 20, numanim = 5, kcome = 60 --> Cada animal podra comer 4.0 kilos
+	 * kcomida = 20, numanim = 0, kcome = 60 --> Si no hay animales no hay nada que alimentar
 	 */
 
 	public static void main(String[] args) {
@@ -38,7 +36,7 @@ public class Ejercicio3 {
 				que se consume se considera que comen*/
 				System.out.println("Los animales comen correctamente.");
 			} else { //En caso contrario, se averigua que racion le corresponde a cada animal
-				System.out.println("Cada animal podra comer " + (kcomida / numanim) + "kilos");
+				System.out.println("Cada animal podra comer " + (kcomida / numanim) + " kilos");
 			}
 		} else { //Se informa al usuario que no tiene animales :)
 			System.out.println("Si no hay animales no hay nada que alimentar");

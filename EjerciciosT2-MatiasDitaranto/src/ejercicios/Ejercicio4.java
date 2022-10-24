@@ -6,14 +6,12 @@ public class Ejercicio4 {
 
 	/*
 	 * Para la verificacion de este programa se han realizado diversas pruebas:
-	 * Se introducen numeros de 1 sola cifra [2,6,8] 
-	 * Se introducen numeros multiplos de 10 [del 10 al 90]
-	 * Se introducen numeros del 11 al 15
-	 * Se introducen numeros del 16 al 29 [17,19,25,27]
+	 * Se introducen numeros de 1 sola cifra [2] --> El numero es dos
+	 * Se introducen numeros multiplos de 10 [20] --> El numero es veinte
+	 * Se introducen numeros del 12 --> El numero es doce
+	 * Se introducen numeros del 16 al 29 [27] --> El numero es veintisiete
 	 * Se introducen numeros del 31 hasta el 99 (los multiplos de 10 ya estan
-	 * comprobrados)
-	 * Todos estos valores son necesarios ya que en cada caso el resultado
-	 * varia.
+	 * comprobrados) [44] --> El numero es cuarenta y cuatro
 	 */
 
 	public static void main(String[] args) {
