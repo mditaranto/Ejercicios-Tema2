@@ -5,10 +5,9 @@ import java.util.Scanner; //Importamos el objeto Scanner
 public class Ejercicio8 {
 	
 	/*
-	 *  Para la verificacion de este programa se han realizado diversas pruebas:
-	 *  Se introducen mas de 800 km
-	 *  Se introducen menos de 800 km y mas de 7 dias
-	 *  Se introducen mas de 800 km y de 7 dias (Aplica descuento)
+	 * Para la verificacion de este programa se han realizado diversas pruebas:
+	 * km = 570, dias = 5 --> El precio del billete del tren es: 1425 euros
+	 * km = 810, dias = 9 --> El precio del billete del tren es: 1.417,5 euros
 	 */
 
 	public static void main(String[] args) {
