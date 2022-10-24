@@ -3,12 +3,18 @@ package ejercicios;
 import java.util.Scanner; //Importamos el objeto Scanner
 
 public class Ejercicio6 {
+	
+	/*
+	 * Para la verificacion de este programa se han realizado diversas pruebas:
+	 * Se introduce correctamente la suma de los numeros ofrecidos.
+	 * Se introduce un valor incorrecto de la suma
+	 */
 
 	public static void main(String[] args) {
 		/*
 		 * Creamos la variable donde guardaremos los numero aleatorios En este caso
 		 * double ya que es necesario para generar un numero aleatorio, pero como
-		 * despreciamos los decimales en este caso, siempre voy a usar el cast
+		 * despreciamos los decimales en este caso, siempre voy a usar el cast 
 		 */
 		double num1;
 		double num2;
@@ -18,19 +24,14 @@ public class Ejercicio6 {
 		Scanner sc = new Scanner(System.in); // Creamos el objeto Scanner
 
 		System.out.println("A continuacion se le ofecera 2 numeros que debe de sumar");
-		// Creamos un numero aleatorio y lo guardamos en la variable
+		// Creamos un numero aleatorio y lo guardamos en las variables
 		num1 = Math.random() * 99;
-		// Posteriormente se lo mostramos al usuario por pantalla
-		System.out.println((int) num1);
-		// Creamos un numero aleatorio y lo guardamos en la variable
 		num2 = Math.random() * 99;
 		// Posteriormente se lo mostramos al usuario por pantalla
-		System.out.println((int) num2);
-
 		// Se pide al usuario que ofrezca el resultado de la suma
-		System.out.print("Resultado de la suma:");
+		System.out.print((int) num1 + " + " + (int)num2 + " = ");
 		suma = sc.nextInt(); // El valor es guardado en la variable
-
+		
 		// En caso que la suma sea correcta se indica
 		if (suma == (int) num1 + (int) num2) {
 			System.out.println("Ha realizado correctamente la suma");

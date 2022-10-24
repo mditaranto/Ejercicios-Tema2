@@ -4,6 +4,18 @@ import java.util.Scanner; //Importamos el objeto Scanner
 
 public class Ejercicio4 {
 
+	/*
+	 * Para la verificacion de este programa se han realizado diversas pruebas:
+	 * Se introducen numeros de 1 sola cifra [2,6,8] 
+	 * Se introducen numeros multiplos de 10 [del 10 al 90]
+	 * Se introducen numeros del 11 al 15
+	 * Se introducen numeros del 16 al 29 [17,19,25,27]
+	 * Se introducen numeros del 31 hasta el 99 (los multiplos de 10 ya estan
+	 * comprobrados)
+	 * Todos estos valores son necesarios ya que en cada caso el resultado
+	 * varia.
+	 */
+
 	public static void main(String[] args) {
 		// Creamos la variable donde guardaremos los datos introduccidos
 		int num;
@@ -54,11 +66,9 @@ public class Ejercicio4 {
 			default -> {
 				unid = "cero";
 			}
-			}
-			if (num < 10) { /*
-							 * Si el numero es menor a 10, se devuelve como valor escrito del numero las
-							 * unidades
-							 */
+			} // Si el numero es menor a 10, se devuelve como valor escrito del numero las
+			// unidades
+			if (num < 10) {
 				System.out.println("El numero es " + unid);
 			} else { // Si el numero es mayor a 10, el programa continua
 				// Con este switch sacamos las decenas del numero

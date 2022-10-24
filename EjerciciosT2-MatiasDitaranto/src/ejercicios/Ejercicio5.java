@@ -3,6 +3,12 @@ package ejercicios;
 import java.util.Scanner; //Importamos el objeto Scanner
 
 public class Ejercicio5 {
+	
+	/*
+	 * Para la verificacion de este programa se han realizado diversas pruebas:
+	 * Se introduce un numero cualquiera negativo que debe de entregar positivo
+	 * Se introduce un numero positivo que debe entregar igual.
+	 */
 
 	public static void main(String[] args) {
 		// Creamos la variable donde guardaremos los datos introduccidos

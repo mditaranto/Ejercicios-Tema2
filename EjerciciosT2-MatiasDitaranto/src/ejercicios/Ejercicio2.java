@@ -3,6 +3,14 @@ package ejercicios;
 import java.util.Scanner; //Importamos el objeto Scanner
 
 public class Ejercicio2 {
+	
+	/*
+	 * Para la verificacion de este programa se han realizado diversas pruebas:
+	 * Se recogen DNI reales que conozcas y se introducen al programa sin letra;
+	 * El programa debe entrgar la letra del DNI.
+	 * Para comprobar que se introduzcan DNI correctamente se introduce un numero
+	 * de mas de 8 cifras (un DNI tiene 8) y debe de indicar que no es un DNI valido
+	 */
 
 	public static void main(String[] args) {
 		//Creamos las variables para guardar la letra del DNI
@@ -23,6 +31,7 @@ public class Ejercicio2 {
 		
 		//Con un switch y dependiendo del valor de la AUX determinamos la letra
 		//Como cada numero equivale a 1 letra, valoramos este mismo.
+		if (DNI<99999999) {
 		switch (aux) {
 		case 0 -> {
 			letra = "T";
@@ -94,13 +103,14 @@ public class Ejercicio2 {
 			letra = "E";
 		}
 		default -> {
-			letra = "Error de calculo";
+			letra = "DNI incorrecto";
 		}
-		
-
 		}
 		//Ofrece la letra del DNI al usuario
 		System.out.println("La letra de su DNI es: " + letra);
+		} else { //En caso de tener mas de 8 cifras se considera incorrecto.
+			System.out.println("Dni no valido");
+		}
 		sc.close(); // Se cierra el objeto Scanner
 	}
 }
