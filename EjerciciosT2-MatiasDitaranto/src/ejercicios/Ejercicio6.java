@@ -6,8 +6,8 @@ public class Ejercicio6 {
 	
 	/*
 	 * Para la verificacion de este programa se han realizado diversas pruebas:
-	 * Se introduce correctamente la suma de los numeros ofrecidos.
-	 * Se introduce un valor incorrecto de la suma
+	 * 45 + 34 = 79 --> Ha realizado correctamente la suma
+	 * 56 + 22 = 272 --> vaya, te has equivocado. la suma es: 78
 	 */
 
 	public static void main(String[] args) {
