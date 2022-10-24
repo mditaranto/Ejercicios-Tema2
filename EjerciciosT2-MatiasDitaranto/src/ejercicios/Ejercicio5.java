@@ -6,8 +6,8 @@ public class Ejercicio5 {
 	
 	/*
 	 * Para la verificacion de este programa se han realizado diversas pruebas:
-	 * Se introduce un numero cualquiera negativo que debe de entregar positivo
-	 * Se introduce un numero positivo que debe entregar igual.
+	 * 5 --> 5
+	 * -7 --> 7
 	 */
 
 	public static void main(String[] args) {
