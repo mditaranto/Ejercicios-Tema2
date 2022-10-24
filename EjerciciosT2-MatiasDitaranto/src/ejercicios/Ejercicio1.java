@@ -9,7 +9,7 @@ public class Ejercicio1 {
 	 * Se ingresan numeros multiplos de 10 (tiene que dar "no capicua")
 	 * Se ingresan numeros de una cifra (capicua) [1,5,7]
 	 * Se ingresan numeros de 2 cifras:
-	 * Iguales (Capicua) [22,66]
+	 * Iguales (Capicua) [22,66] 
 	 * Desiguales (No capicua) [34,78]
 	 * Se ingresan numeros de 3 cifras;
 	 * Con decimales igual a las unidades (Capicua) [212, 535]
